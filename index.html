@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href='style.css' rel="stylesheet">
+
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <div class="header-wrapper">
+    <nav class="menu">
+      <div class="menu__burger">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu">
+          <div class="menu__burger__line first"></div>
+          <div class="menu__burger__line second"></div>
+          <div class="menu__burger__line third"></div>
+        </label>
+
+        <nav class="menu__burger__items">
+          <a href="#">Популярные маршруты</a>
+          <a href="#">Расписание рейсов</a>
+          <a href="#">Забронированные рейсы</a>
+          <a href="#">Вход для партнеров</a>
+          <a href="#">О компании</a>
+          <a href="#">Контакты</a>
+        </nav>
+
+      </div>
+      <ul class="menu__items">
+        <li><img src="./icons/user.png" alt=""><a href="#">Личный кабинет</a><span class="arrow"></span>
+          <div class="menu__item">
+            <a href="#">Регистрация</a>
+            <a href="#">Вход</a>
+          </div>
+        </li>
+        <li><img src="./icons/rub.png" alt="">Рубль<span class="arrow"></span>
+          <div class="menu__item">
+            <a href="#">Доллар</a>
+            <a href="#">Гривна</a>
+          </div>
+        </li>
+        <li>Ru<span class="arrow"></span>
+          <div class="menu__item">
+            <a href="#" id="En">En</a>
+            <a href="#" id="Ua">Ua</a>
+          </div>
+        </li>
+        <li class="menu__feedback"><span class="menu__phone">8 800 500-61-05<br></span><span class="support">Круглосуточная поддержка</span></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+    <div class="title"><h1>Морские прогулки<br><span>ПО ЧЁРНОМУ МОРЮ</span></h1></div>
+    <div class="select">
+      <a href="#items" class="btn">Выбрать круиз</a>
+    </div>
+    <div class="path">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="222" viewBox="0 0 48 222"><defs><path id="jskba" d="M651.55 416.4c6.27 18.8 15.6 24.53 11.72 54.54-6.12 29.73-33.55 36.88-41.94 69.54-7.72 41.9 27.97 38.78 25.93 89.11-.31 7.85-.42 17.25-2.54 24.43"/><clipPath id="jskbb"><use fill="#fff" xlink:href="#jskba"/></clipPath></defs><g><g transform="translate(-618 -416)"><use fill="#fff" fill-opacity="0" stroke="#0d3351" stroke-dasharray="12 6" stroke-miterlimit="50" stroke-width="6" clip-path="url(&quot;#jskbb&quot;)" xlink:href="#jskba"/></g></g></svg>
+    </div>
+  </div>
+</header>
+
+<div class="catalog-container">
+  <h2 class="catalog__title">Каталог круизов</h2>
+  <div class="filter">Сортировать круизы по <span>цене<span class="arrow"></span></span></div>
+
+  <div id="items" class="items">
+    <div class="card card-1">
+      <div class="ribbon ribbon-blue">
+        <p class="ribbon__text">Хит<br>Продаж</p>
+      </div>
+      <div class="card__image card__image-1"></div>
+      <div class="card__text">
+        <a href="#openModal"><h3 class="card__title">Морской круиз в&nbsp;Анапу<span class="arrow_left"></span></h3></a>
+        <div class="card__description">
+          <p class="route"><span>Маршрут: </span>Сочи-Лазаревское-Геленджик-Анапа</p>
+          <p class="duration"><span>Продолжительность: </span>10 ч. 0 мин.</p>
+        </div>
+        <div class="card__prise">49 000 руб.</div>
+      </div>
+    </div>
+
+    <div class="card card-2">
+      <div class="ribbon ribbon-red">
+        <p class="ribbon__text">Акция</p>
+      </div>
+      <div class="card__image card__image-2"></div>
+      <div class="card__text">
+        <a href="#openModal"><h3 class="card__title">Обзорная морская прогулка с&nbsp;экскурсией<span class="arrow_left"></span></h3></a>
+        <div class="card__description">
+          <p class="route"><span>Маршрут: </span>Сочи-Адлер-Сочи (без высадки)</p>
+          <p class="duration"><span>Продолжительность: </span>1 ч. 0 мин.</p>
+        </div>
+        <div class="card__prise">5 000 руб.<span>15000 руб.</span></div>
+      </div>
+    </div>
+
+    <div class="card card-3">
+      <div class="ribbon ribbon-red">
+        <p class="ribbon__text">Скидка<br>10%</p>
+      </div>
+      <div class="card__image card__image-3"></div>
+      <div class="card__text">
+        <a href="#openModal"><h3 class="card__title">Морская прогулка в&nbsp;Геленджик<span class="arrow_left"></span></h3></a>
+        <div class="card__description">
+          <p class="route"><span>Маршрут: </span>Сочи-Туапсе-Геленджик</p>
+          <p class="duration"><span>Продолжительность: </span>12 ч. 30 мин.</p>
+        </div>
+        <div class="card__prise">7 000 руб. <span>10000 руб.</span></div>
+      </div>
+    </div>
+
+
+    <div class="card card-4">
+      <div class="card__image card__image-4"></div>
+      <div class="card__text">
+        <a href="#openModal"><h3 class="card__title">Морской круиз в&nbsp;Новороссийск<span class="arrow_left"></span></h3></a>
+        <div class="card__description">
+          <p class="route"><span>Маршрут: </span>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</p>
+          <p class="duration"><span>Продолжительность: </span>13 ч. 0 мин.</p>
+        </div>
+        <div class="card__prise">14 800 руб.</div>
+      </div>
+    </div>
+
+    <div class="card card-5">
+      <div class="card__image card__image-5"></div>
+      <div class="card__text">
+        <a href="#openModal"><h3 class="card__title">Морская прогулка в&nbsp;Абрау-Дюрсо<span class="arrow_left"></span></h3></a>
+        <div class="card__description">
+          <p class="route"><span>Маршрут: </span>Сочи-Аброу-Дюрсо</p>
+          <p class="duration"><span>Продолжительность: </span>11 ч. 0 мин.</p>
+        </div>
+        <div class="card__prise">14 800 руб.</div>
+      </div>
+    </div>
+  </div>
+  <div class="select mt-24">
+    <a href="#" class="btn">Больше круизов <span class="arrow arrow_white"></span></a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-wrapper">
+    <div class="footer__left"> <!-- i think the wrong name -->
+      <ul>
+        <li>Вход для партнеров</li>
+        <li>О компании</li>
+        <li>Контакты</li>
+      </ul>
+    </div>
+    <div class="footer__media">
+      <p>Будь на связи:</p>
+      <a href="https://vk.com"><div class="round"><img src="./icons/social/vk.png" alt=""></div></a>
+      <a href="https://ok.ru"><div class="round"><img src="./icons/social/ok.png" alt=""></div></a>
+      <a href="https://www.youtube.com/"><div class="round"><img src="./icons/social/yt.png" alt=""></div></a>
+      <a href="https://www.instagram.com"><div class="round"><img src="./icons/social/insta.png" alt=""></div></a>
+    </div>
+    <div class="footer__right"> <!-- that's too wrong -->
+      <ul>
+        <li class="footer_phone">8 800 500-61-05</li>
+        <li class="footer_support">Круглосуточная поддержка</li>
+        <li class="footer_copyright">© 2016 ООО «Городские Круизы»</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div id="openModal" class="modal-wrapper">
+  <div class="modal">
+    <a class="modal__close" href="#items">X</a>
+      <div class="modal__image-container">
+        <img class="modal__image-main" src="card.jpg" alt="">
+        <img class="modal__image-preview" src="./preview/4.jpg" alt="">
+        <img class="modal__image-preview" src="./preview/1.jpg" alt="">
+        <img class="modal__image-preview" src="./preview/3.jpg" alt="">
+        <img class="modal__image-preview" src="./preview/2.jpg" alt="">
+      </div>
+      <div class="modal__description-container">
+        <h3 class="title_card mb-30">Морская проудка в Аброу-Дюрсо</h3> <!--просто margin-bottom 30px-->
+        <p class="route"><span>Маршрут: </span>Сочи - Абрау - Дюрсо</p>
+        <p class="duration"><span>Продолжительность: </span>11 ч. 0 мин.</p>
+        <p class="schedule"><span>Расписание: </span><br>Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40
+          <br>Отправление из Абрау-Дюрсо: ежедневно в 12:25, 14:05, 15:45, 17:25, 19:05
+          <br>Продолжительность 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде
+          <br>Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"
+        </p>
+        <p class="prise">14 800 руб.</p>
+        <div class="reserv">
+          <a href="#" class="btn">Бронирование</a>
+        </div>
+      </div>
+  </div>
+
+</div>
+</body>
+</html>
